@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		<style type="text/css">
-			#text *{
-				color: blue;
-				background-color: blue
-			}
-		</style>
-	</title>
+	<title></title>
 </head>
 <body>
 	<h1>Vice Versa</h1>
-	<form method="post" action="reverse/">
-		<textarea id='text' name='text' rows='10' cols='50'>
+	<form action="{% url 'reverse' %}">
+		<textarea name='text' rows='10' cols='50'>
 		</textarea>
 		<br><br>
 		<input type="submit" value="Reverse!">
